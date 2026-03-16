@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Beställ</title>
+
+    <!-- external style sheet reference -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/Users/nojal499/Downloads/The seasons font/Fontspring-DEMO-theseasons-reg.otf">
+
+    <!-- external JavaScript reference -->
+    <script src="scripts.js"></script>
+</head>
+
+<body class="colored-text">
+    <img class="logotyp centrerad-bild" src="media/logga vit text transparent.png" alt="Logotyp">
+    <header>
+        <nav class="flexcontainer">
+            <a href="Hem.html" class="knapp">Hem</a>
+            <a href="Våra_kakor.html" class="knapp">Våra kakor</a>
+            <a href="Beställ.html" class="knapp">Beställ</a>
+            <a href="Förpackning.html" class="knapp">Förpackning</a>
+            <a href="Om_oss.html" class="knapp">Om oss</a>
+        </nav>
+    </header>
+
+    <h1>Beställ</h1>
+
+    <p>Vill du smaka på våra kakor? Här kan du enkelt beställa hem hur mycket du vill! 
+        <br> Kakorna säljs i förpackningar om
+        200g
+        och kostar 50kr st.
+    </p>
+
+    <div class="Flexbox-container font-beställ">
+        <h3>Beställ dina kakor här!</h3>
+        <div class="grid_book">
+            <label for="Person">Namn:</label>
+            <input type="text" name="Person"></input>
+
+            <label for="adress">Adress:</label>
+            <input type="text" name="adress"></input>
+
+            <label for="email">Email:</label>
+            <input type="text" name="email"></input>
+
+            <label for="antalBrownies">Antal brownies:</label>
+            <select id="BrownieCount">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <label for="antalKolakakor">Antal kolakakor:</label>
+            <select id="KolakakaCount">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+
+            <label> </label>
+            <button type="button" value="Lägg beställning" onclick="confirmBox()">Lägg beställning</button>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
